@@ -46,13 +46,6 @@
           "defaultValue": false,
           "required": false,
           "code": "noShow"
-        },
-        {
-          "title": "Using Human Player",
-          "type": "boolean",
-          "required": false,
-          "defaultValue": false,
-          "code": "humanPlayer"
         }
       ]
     },
@@ -240,14 +233,7 @@
         },
         {
           "code": "d",
-          "title": "Died",
-          "type": "boolean",
-          "defaultValue": false,
-          "required": false
-        },
-        {
-          "code": "to",
-          "title": "Tipped Over",
+          "title": "Died/Tipped Over",
           "type": "boolean",
           "defaultValue": false,
           "required": false
