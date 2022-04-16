@@ -148,7 +148,7 @@
         },
         {
           "code": "wd",
-          "title": "Was Defended",
+          "title": "Did they defend?",
           "type": "boolean",
           "defaultValue": false,
           "required": false
