@@ -124,7 +124,7 @@
         },
         {
           "code": "tl",
-          "title": "Lower Cargo Scored",
+          "title": "Upper Cargo Missed", 
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -132,7 +132,7 @@
         },
         {
           "code": "tm",
-          "title": "Upper Cargo Missed",
+          "title": "Lower Cargo Scored",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
