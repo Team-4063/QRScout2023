@@ -1,7 +1,7 @@
 {
   "$schema": "../schema.json",
   "title": "QRScout",
-  "page_title": "Rapid React",
+  "page_title": "Charged Up",
   "sections": [
     {
       "name": "Prematch",
@@ -20,7 +20,7 @@
           "code": "matchNumber"
         },
         {
-          "title": "Robot",
+          "title": "Alliance",
           "type": "select",
           "required": true,
           "code": "robot",
@@ -53,26 +53,15 @@
       "name": "Autonomous",
       "fields": [
         {
-          "title": "Starting Location",
-          "type": "select",
-          "choices": {
-            "left": "Left",
-            "middle": "Middle",
-            "right": "Right"
-          },
-          "required": false,
-          "code": "autoStart"
-        },
-        {
           "code": "at",
-          "title": "Taxied?",
+          "title": "Mobility?",
           "type": "boolean",
           "defaultValue": false,
           "required": false
         },
         {
           "code": "au",
-          "title": "Upper Cargo Scored",
+          "title": "High Cone",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -80,7 +69,7 @@
         },
         {
           "code": "aum",
-          "title": "Upper Cargo Missed",
+          "title": "High Cone Missed",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -88,7 +77,7 @@
         },
         {
           "code": "al",
-          "title": "Lower Cargo Scored",
+          "title": "High Cube",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -96,15 +85,86 @@
         },
         {
           "code": "alm",
-          "title": "Lower Cargo Missed",
+          "title": "High Cube Missed",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
           "required": false
         },
         {
-          "code": "ac",
-          "title": "Picked up more cargo?",
+          "code": "au2",
+          "title": "Mid Cone",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "aum2",
+          "title": "Mid Cone Missed",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "al2",
+          "title": "Mid Cube",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "alm2",
+          "title": "Mid Cube Missed",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "au3",
+          "title": "Low Cone",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "aum3",
+          "title": "Low Cone Missed",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "al3",
+          "title": "Low Cube",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "alm3",
+          "title": "Low Cube Missed",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "AD",
+          "title": "Docked",
+          "type": "boolean",
+          "defaultValue": false,
+          "required": false
+        },
+        {
+          "code": "AE",
+          "title": "Engaged",
           "type": "boolean",
           "defaultValue": false,
           "required": false
@@ -116,15 +176,7 @@
       "fields": [
         {
           "code": "tu",
-          "title": "Upper Cargo Scored",
-          "type": "counter",
-          "defaultValue": 0,
-          "min": 0,
-          "required": false
-        },
-        {
-          "code": "tl",
-          "title": "Upper Cargo Missed", 
+          "title": "High Cone",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -132,7 +184,15 @@
         },
         {
           "code": "tm",
-          "title": "Lower Cargo Scored",
+          "title": "High Cone Missed",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "tl",
+          "title": "High Cube Scored",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
@@ -140,48 +200,104 @@
         },
         {
           "code": "tn",
-          "title": "Lower Cargo Missed",
+          "title": "High Cube Missed",
           "type": "counter",
           "defaultValue": 0,
           "min": 0,
           "required": false
         },
         {
-          "code": "wd",
-          "title": "Did they defend?",
+          "code": "tu2",
+          "title": "Mid Cone",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "tm2",
+          "title": "Mid Cone Missed",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "tl2",
+          "title": "Mid Cube Scored",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "tn2",
+          "title": "Mid Cube Missed",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "tu3",
+          "title": "Low Cone",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "tm3",
+          "title": "Low Cone Missed",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "tl3",
+          "title": "Low Cube Scored",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "tn3",
+          "title": "Low Cube Missed",
+          "type": "counter",
+          "defaultValue": 0,
+          "min": 0,
+          "required": false
+        },
+        {
+          "code": "TD",
+          "title": "Docked",
           "type": "boolean",
           "defaultValue": false,
           "required": false
         },
         {
-          "code": "cl",
-          "title": "Pick up Cargo where",
-          "type": "select",
-          "choices": {
-            "t": "Terminal",
-            "g": "Ground",
-            "b": "Both",
-            "x": "Not Attempted"
-          },
-          "defaultValue": "x",
+          "code": "TE",
+          "title": "Engaged",
+          "type": "boolean",
+          "defaultValue": false,
           "required": false
-        }
+        } 
       ]
     },
     {
       "name": "Endgame",
       "fields": [
         {
-          "code": "c",
-          "title": "Climb",
+          "code": "DE",
+          "title": "Robots on",
           "type": "select",
           "choices": {
-            "1": "Low",
-            "2": "Mid",
-            "3": "High",
-            "4": "Traversal",
-            "f": "Attempted but Failed",
-            "x": "Not Attempted"
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3"
           },
           "defaultValue": "x",
           "required": false
@@ -191,6 +307,13 @@
           "title": "Started climb before EndGame",
           "type": "boolean",
           "defaultValue": false,
+          "required": false
+        },
+        {
+          "code": "cn",
+          "title": "# of alliance bots climbed",
+          "type": "counter",
+          "defaultValue": 0,
           "required": false
         }
       ]
@@ -226,7 +349,14 @@
         },
         {
           "code": "d",
-          "title": "Died/Tipped Over",
+          "title": "Died",
+          "type": "boolean",
+          "defaultValue": false,
+          "required": false
+        },
+        {
+          "code": "to",
+          "title": "Tipped Over",
           "type": "boolean",
           "defaultValue": false,
           "required": false
@@ -236,14 +366,6 @@
           "title": "Yellow/Red Card",
           "type": "boolean",
           "defaultValue": false,
-          "required": false
-        },
-        {
-          "code": "co",
-          "title": "Comments",
-          "type": "text",
-          "min": 0,
-          "max": 50,
           "required": false
         }
       ]
