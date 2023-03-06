@@ -53,14 +53,14 @@
       "name": "Autonomous",
       "fields": [
         {
-          "code": "at",
+          "code": "am",
           "title": "Mobility?",
           "type": "boolean",
           "defaultValue": false,
           "required": false
         },
         {
-          "code": "au",
+          "code": "ahc",
           "title": "High Cone",
           "type": "counter",
           "defaultValue": 0,
@@ -68,7 +68,7 @@
           "required": false
         },
         {
-          "code": "aum",
+          "code": "ahcm",
           "title": "High Cone Missed",
           "type": "counter",
           "defaultValue": 0,
@@ -76,7 +76,7 @@
           "required": false
         },
         {
-          "code": "al",
+          "code": "ah3",
           "title": "High Cube",
           "type": "counter",
           "defaultValue": 0,
@@ -84,7 +84,7 @@
           "required": false
         },
         {
-          "code": "alm",
+          "code": "ah3m",
           "title": "High Cube Missed",
           "type": "counter",
           "defaultValue": 0,
@@ -92,7 +92,7 @@
           "required": false
         },
         {
-          "code": "au2",
+          "code": "amc",
           "title": "Mid Cone",
           "type": "counter",
           "defaultValue": 0,
@@ -100,7 +100,7 @@
           "required": false
         },
         {
-          "code": "aum2",
+          "code": "amcm",
           "title": "Mid Cone Missed",
           "type": "counter",
           "defaultValue": 0,
@@ -108,7 +108,7 @@
           "required": false
         },
         {
-          "code": "al2",
+          "code": "am3",
           "title": "Mid Cube",
           "type": "counter",
           "defaultValue": 0,
@@ -116,7 +116,7 @@
           "required": false
         },
         {
-          "code": "alm2",
+          "code": "am3m",
           "title": "Mid Cube Missed",
           "type": "counter",
           "defaultValue": 0,
@@ -124,7 +124,7 @@
           "required": false
         },
         {
-          "code": "au3",
+          "code": "alc",
           "title": "Low Cone",
           "type": "counter",
           "defaultValue": 0,
@@ -132,7 +132,7 @@
           "required": false
         },
         {
-          "code": "aum3",
+          "code": "alcm",
           "title": "Low Cone Missed",
           "type": "counter",
           "defaultValue": 0,
@@ -148,7 +148,7 @@
           "required": false
         },
         {
-          "code": "alm3",
+          "code": "al3m",
           "title": "Low Cube Missed",
           "type": "counter",
           "defaultValue": 0,
@@ -175,7 +175,7 @@
       "name": "Teleop",
       "fields": [
         {
-          "code": "tu",
+          "code": "thc",
           "title": "High Cone",
           "type": "counter",
           "defaultValue": 0,
@@ -183,7 +183,7 @@
           "required": false
         },
         {
-          "code": "tm",
+          "code": "thcm",
           "title": "High Cone Missed",
           "type": "counter",
           "defaultValue": 0,
@@ -191,7 +191,7 @@
           "required": false
         },
         {
-          "code": "tl",
+          "code": "th3",
           "title": "High Cube Scored",
           "type": "counter",
           "defaultValue": 0,
@@ -199,7 +199,7 @@
           "required": false
         },
         {
-          "code": "tn",
+          "code": "th3m",
           "title": "High Cube Missed",
           "type": "counter",
           "defaultValue": 0,
@@ -207,7 +207,7 @@
           "required": false
         },
         {
-          "code": "tu2",
+          "code": "tmc",
           "title": "Mid Cone",
           "type": "counter",
           "defaultValue": 0,
@@ -215,7 +215,7 @@
           "required": false
         },
         {
-          "code": "tm2",
+          "code": "tmcm",
           "title": "Mid Cone Missed",
           "type": "counter",
           "defaultValue": 0,
@@ -223,7 +223,7 @@
           "required": false
         },
         {
-          "code": "tl2",
+          "code": "tm3",
           "title": "Mid Cube Scored",
           "type": "counter",
           "defaultValue": 0,
@@ -231,7 +231,7 @@
           "required": false
         },
         {
-          "code": "tn2",
+          "code": "tm3m",
           "title": "Mid Cube Missed",
           "type": "counter",
           "defaultValue": 0,
@@ -239,7 +239,7 @@
           "required": false
         },
         {
-          "code": "tu3",
+          "code": "tlc",
           "title": "Low Cone",
           "type": "counter",
           "defaultValue": 0,
@@ -247,7 +247,7 @@
           "required": false
         },
         {
-          "code": "tm3",
+          "code": "tlcm",
           "title": "Low Cone Missed",
           "type": "counter",
           "defaultValue": 0,
@@ -263,7 +263,7 @@
           "required": false
         },
         {
-          "code": "tn3",
+          "code": "tl3m",
           "title": "Low Cube Missed",
           "type": "counter",
           "defaultValue": 0,
@@ -284,38 +284,6 @@
           "defaultValue": false,
           "required": false
         } 
-      ]
-    },
-    {
-      "name": "Endgame",
-      "fields": [
-        {
-          "code": "DE",
-          "title": "Robots on",
-          "type": "select",
-          "choices": {
-            "0": "0",
-            "1": "1",
-            "2": "2",
-            "3": "3"
-          },
-          "defaultValue": "x",
-          "required": false
-        },
-        {
-          "code": "be",
-          "title": "Started climb before EndGame",
-          "type": "boolean",
-          "defaultValue": false,
-          "required": false
-        },
-        {
-          "code": "cn",
-          "title": "# of alliance bots climbed",
-          "type": "counter",
-          "defaultValue": 0,
-          "required": false
-        }
       ]
     },
     {
